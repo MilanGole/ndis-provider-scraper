@@ -26,40 +26,46 @@ Make sure you have **Python 3.10+** installed on your system.
 Open your terminal (or VS Code) directly in the project directory:
 ```powershell
 cd C:\PythonProjects\ndis-provider-scraper
+```
 2. Set Up a Virtual Environment
 Create a clean, isolated virtual environment inside the project directory so the scraper's packages do not interfere with your system-wide Python installation:
-
-PowerShell
+```PowerShell
 python -m venv .venv
+```
 3. Activate the Environment
 Tell your terminal to start using your newly created virtual environment:
 
 On Windows (PowerShell):
 
-PowerShell
+```PowerShell
 .\.venv\Scripts\Activate.ps1
+```
 On Mac/Linux:
 
-Bash
+```Bash
 source .venv/bin/activate
+```
 4. Install Dependencies
 Ensure your local pip package manager is updated and install the required libraries from the requirements.txt file:
 
-PowerShell
+```PowerShell
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
+```
 5. Install Playwright Browsers
 Download the required Chromium engine used by the automated browser to handle the Cloudflare handshake:
 
-PowerShell
+```PowerShell
 python -m playwright install chromium
+```
 💻 Usage
 To launch the scraper, make sure your virtual environment is active and run the main Python script:
 
-PowerShell
+```PowerShell
 python scraper.py
+```
 (Note: If your main script is named differently, replace scraper.py with your file name.)
-
+---
 📂 Project Structure
 Plaintext
 ndis-provider-scraper/
@@ -68,5 +74,6 @@ ndis-provider-scraper/
 ├── requirements.txt       # Project dependencies (Playwright, pandas, etc.)
 ├── README.md              # Project documentation
 └── .gitignore             # Tells Git to ignore .venv and cached files
+---
 🛡️ License
 This project is licensed under the MIT License.
