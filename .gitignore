@@ -1,0 +1,12 @@
+# 1. Ignore the entire data folder (protects your raw JSON and full Excel files)
+data/
+
+# 2. Ignore Python virtual environment clutter
+.venv/
+env/
+
+# 3. Ignore hidden system and notebook cache files
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
